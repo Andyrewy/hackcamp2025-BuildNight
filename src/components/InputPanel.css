@@ -49,11 +49,17 @@ body {
   }
   
   h1 {
+    border: 5px solid #f15055;
     font-weight: bold;
     text-align: center;
     color: #0b53c8;
-    font-family: "Arcade Classic", monospace
-  }
+    font-family: "Arcade Classic", monospace;
+
+    display: table;        /* shrink to content */
+    padding: 10px 20px;    /* space inside the border */
+    margin: 20px auto;     /* center horizontally */
+    font-size: 30;
+}
   
   /* Input styling */
   input {
@@ -63,11 +69,12 @@ body {
     background-color: #9eb2b0;
     font-size: 16px;
     width: 100%;
-    font-family: "Arcade Classic", monospace
+
   }
   
   label {
     margin-bottom: 6px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center; 
     color: #004cc8;
