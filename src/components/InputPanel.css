@@ -1,40 +1,103 @@
-.inputPanelTop {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    max-width: 400px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-  }
+@font-face {
+    font-family: "Arcade Classic";
+    src: url("./../../public/fonts/arcadeclassic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
-  h1 {
-    text-align: center;
+body {
+    background-color: #c7dbff;
+}
+
+/* First row with the 2 address inputs */
+.address-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;   /* full wide row */
+    margin: 20px auto;
   }
   
+  /* Each address input takes half the row */
+  .address-half {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-with-helper {
+    display: flex;
+    flex-direction: column; /* stack input + helper text vertically */
+    margin-bottom: 10px;
+  }
+
+  /* Speeds row */
+  .speed-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  /* Speed inputs smaller */
+  .speed-input {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #0b53c8;
+    font-family: "Arcade Classic", monospace
+  }
+  
+  /* Input styling */
   input {
     padding: 12px;
-    font-size: 16px;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid #ccc;
+    background-color: #9eb2b0;
+    font-size: 16px;
     width: 100%;
+    font-family: "Arcade Classic", monospace
   }
   
   label {
+    margin-bottom: 6px;
     font-weight: bold;
+    text-align: center; 
+    color: #004cc8;
+    font-family: "Arcade Classic", monospace
+  }
+  
+  /* Button row */
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
   
   button {
-    padding: 15px;
-    font-size: 20px;
-    margin-top: 10px;
-    border-radius: 4px;
+    padding: 15px 25px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Arcade Classic", monospace;
     border: none;
-    background-color: #007bff;
-    color: white;
+    text-align: center;
+    /* Apply border-radius to make it circular */
+    border-radius: 50%; 
+
+    background-color: #6ebc56;
+    color: #044eaf;
     cursor: pointer;
+    width: 80px;
+    height: 80px;
   }
-  
   button:hover {
-    background-color: #0056b3;
+    background-color: #4c843a;
   }
   
