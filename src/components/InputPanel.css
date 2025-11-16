@@ -1,0 +1,40 @@
+.inputPanelTop {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

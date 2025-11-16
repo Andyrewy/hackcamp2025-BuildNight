@@ -1,8 +1,11 @@
+import InputPanel from "./components/InputPanel"
+import ResultPanel from "./components/ResultCard"
+import calc from "./util/calc"
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello Lebron James!</h1>
-      <h1>Hello my love</h1>
+      <InputPanel />
     </div>
   );
 }
