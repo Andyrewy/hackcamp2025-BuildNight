@@ -1,10 +1,5 @@
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello Lebron James!</h1>
-      <h1>Hello my love</h1>
-    </div>
-  );
-}
+import Results from "./Results";
 
-export default App;
+export default function App() {
+  return <Results />;
+}
