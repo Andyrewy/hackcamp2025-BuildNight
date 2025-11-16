@@ -19,7 +19,9 @@ function InputPanel(props) {
     return (
         <div>
             <h1>Catch-up</h1>
-      
+            <div className="image">
+                <img src="./images/ketchup.png"/>
+            </div>
             {/* ROW 1: BOTH addresses, side by side */}
             <div className="address-row">
                 <div className="address-half">
@@ -28,7 +30,7 @@ function InputPanel(props) {
                         type="text"
                         value={start}
                         onChange={(e) => setStart(e.target.value)}
-                        placeholder="1234 Main Street Vancouver, BC"
+                        placeholder="Ex. 1234 Main Street Vancouver, BC"
                     />
                 </div> 
       
@@ -38,7 +40,7 @@ function InputPanel(props) {
                         type="text"
                         value={destination}
                         onChange={(e) => setDestination(e.target.value)}
-                        placeholder="4321 Main Street Vancouver, BC"
+                        placeholder="Ex. 4321 Main Street Vancouver, BC"
                     />
                 </div>
             </div>
