@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Arcade Classic";
+    src: url("./../../public/fonts/arcadeclassic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #c7dbff;
+}
+
+/* First row with the 2 address inputs */
+.address-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;   /* full wide row */
+    margin: 20px auto;
+  }
+  
+  /* Each address input takes half the row */
+  .address-half {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-with-helper {
+    display: flex;
+    flex-direction: column; /* stack input + helper text vertically */
+    margin-bottom: 10px;
+  }
+
+  /* Speeds row */
+  .speed-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  /* Speed inputs smaller */
+  .speed-input {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #0b53c8;
+    font-family: "Arcade Classic", monospace
+  }
+  
+  /* Input styling */
+  input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #9eb2b0;
+    font-size: 16px;
+    width: 100%;
+    font-family: "Arcade Classic", monospace
+  }
+  
+  label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    text-align: center; 
+    color: #004cc8;
+    font-family: "Arcade Classic", monospace
+  }
+  
+  /* Button row */
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 15px 25px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Arcade Classic", monospace;
+    border: none;
+    text-align: center;
+    /* Apply border-radius to make it circular */
+    border-radius: 50%; 
+
+    background-color: #6ebc56;
+    color: #044eaf;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+  }
+  button:hover {
+    background-color: #4c843a;
+  }
+  
